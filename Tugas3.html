@@ -2,57 +2,16 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <title>Tugas3-H071191059</title>
-    <style>
-        body {
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            background-color: #E8E8E8;
-        }
-
-        img {
-            width: 100%;
-        }
-
-        div.back {
-            background-repeat: repeat-x, repeat-y;
-            background-position: left middle;
-            background-attachment: fixed;
-            background-size: 700px;
-        }
-
-        img.opacity {
-            opacity: 0.5;
-        }
-
-        img:hover {
-            opacity: 1.0;
-        }
-
-        .carousel-inner img {
-            width: 100%;
-            height: 100%;
-        }
-
-        div.transbox {
-            background-color: #ffffff;
-            border: 1px solid black;
-            opacity: 0.9;
-        }
-
-        div.transbox p {
-            font-weight: bold;
-            color: #000000;
-        }
-    </style>
+    <link rel="stylesheet" href="Tugas3.css">
+    <title>Tugas3</title>
 </head>
 
-<body style="background-image:url(https://raw.githubusercontent.com/nugratar/hello/master/images/background.png);">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" style="font-style:oblique;">WEB PAGE</a>
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #DAD420">
+        <a class="navbar-brand">My Web</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -61,17 +20,52 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                        Tugas
-                    </a>
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Semester 1</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Bahasa Indonesia</a>
+                        <a class="dropdown-item" href="#">Biologi Dasar</a>
+                        <a class="dropdown-item" href="#">Fisika Dasar 1</a>
+                        <a class="dropdown-item" href="#">Kewirausahaan</a>
+                        <a class="dropdown-item" href="#">Kimia Dasar</a>
+                        <a class="dropdown-item" href="#">Matematika Dasar I</a>
+                        <a class="dropdown-item" href="#">Pancasila</a>
+                        <a class="dropdown-item" href="#">Pendidikan Agama Islan</a>
+                        <a class="dropdown-item" href="#">Pengantar Pemrograman</a>
+                        <a class="dropdown-item" href="#">Wawasan Sosial Budaya Maritim</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Semester 2</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Aljabar Linier</a>
+                        <a class="dropdown-item" href="#">Bahasa Inggris</a>
+                        <a class="dropdown-item" href="#">Logika Komputer</a>
+                        <a class="dropdown-item" href="#">Matematika Dasar II</a>
+                        <a class="dropdown-item" href="#">Metode Statistika</a>
+                        <a class="dropdown-item" href="#">Pemrograman Berorientasi Objek</a>
+                        <a class="dropdown-item" href="#">Pendidikan Kewarganegaraan</a>
+                        <a class="dropdown-item" href="#">Technopreneurship</a>
+                        <a class="dropdown-item" href="#">Wawasan IPTEKS</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Semester 3</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item"
-                            href="https://sikola.unhas.ac.id/main/work/work.php?cidReq=18H07120503&id_session=4760&gidReq=0&gradebook=0&origin="
-                            target="_">Basis Data</a>
-                        <a class="dropdown-item" href=" ../../Diskrit-Relasi.pdf" target="_">Struktur Diskrit</a>
+                            href="https://drive.google.com/file/d/1HftPcW_et9ru2NDHELbbLxCV2y2il6E2/view?usp=sharing"
+                            target="_">Jadwal
+                            Matkul</a>
+                        <a class="dropdown-item" href="#">Aljabar Terapan</a>
+                        <a class="dropdown-item" href="#">Desain dan Analsisi Algotitma</a>
+                        <a class="dropdown-item" href="#">Matematika Lanjut</a>
+                        <a class="dropdown-item" href="#">Pemrograman Jaringan Komputer</a>
+                        <a class="dropdown-item" href="#">Pemrograman Web</a>
+                        <a class="dropdown-item" href="#">Basis Data</a>
+                        <a class="dropdown-item" href="#">Struktur Diskrit</a>
+                        <a class="dropdown-item" href="#">Teori Peluang</a>
                     </div>
                 </li>
             </ul>
@@ -86,23 +80,22 @@
             </ul>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="https://www.pymnts.com/wp-content/uploads/2014/09/numbers2.jpg" alt="Number">
+                    <img src="../Image/imgCar.jpg" alt="2020" class="imgCar">
                     <div class="carousel-caption">
-                        <h6>Page ini dibuat untuk memenuhi tugas Pemrograman Web A</h6>
+                        <h2>Ilmu Komputer</h2>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="https://www.pymnts.com/wp-content/uploads/2014/09/numbers2.jpg" alt="Number"
-                        class="opacity">
+                    <img src="../Image/imgCar.jpg" alt="2020" class="imgCar">
                     <div class=" carousel-caption">
                         <h3>EXO</h3>
                         <p>We Are One!</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="https://www.pymnts.com/wp-content/uploads/2014/09/numbers2.jpg" alt="Number">
+                    <img src="../Image/imgCar.jpg" alt="2020" class="imgCar">
                     <div class="carousel-caption">
-                        <h2>Ilmu Komputer</h2>
+                        <h6>Page ini dibuat untuk memenuhi tugas Pemrograman Web A</h6>
                     </div>
                 </div>
             </div>
@@ -115,116 +108,119 @@
         </div>
     </div>
 
-    <div class="container" style="background-color:lightgreen;">
+    <div class="container">
         <div class="row">
-            <p style="text-align: center;">
+            <p class="paragraf">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit nulla aut quia, doloribus vel officia
                 deserunt possimus, voluptate laborum cumque, similique odit consectetur eligendi necessitatibus
-                provident eum neque eaque impedit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, recusandae. Alias
-                repellendus
-                dolorum corrupti optio enim ut neque! Rerum nobis harum exercitationem, non itaque assumenda
-                culpa
-                praesentium. Quo, quibusdam explicabo?
+                provident eum neque eaque impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
+                recusandae. Alias repellendus dolorum corrupti optio enim ut neque! Rerum nobis harum exercitationem,
+                non itaque assumenda culpa praesentium. Quo, quibusdam explicabo?
             </p>
         </div>
     </div>
 
-    <div class="container back">
+    <div class="container">
         <div class="row">
-            <div class="col-md-8" style="text-align:center;">
+            <div class="col-md-8">
                 <div class="container">
-                    <h2>Random Things</h2>
+                    <h2 class="judul">Random Things</h2>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="link">
                                 <a href="https://www.youtube.com/results?search_query=tom+and+jerry" target="_">
-                                    <img src="https://img.kurio.network/On9Qf1FD4CUW5tRj53BzENE6bCQ=/1200x628/smart/filters:quality(85):format(jpeg)/https://kurio-img.kurioapps.com/19/07/23/83abfff8-324f-4773-a872-7a301b54574b.jpg"
-                                        class="img-thumbnail opacity">Tom and Jerry</a>
+                                    <img src="../Image/imgRan1.jpg" class="imgRan">Tom and Jerry</a>
                             </div>
                             <div class="link">
-                                <a href="https://www.bbcgoodfood.com/recipes/category/all-dishes" target="_">
-                                    <img src="https://post.healthline.com/wp-content/uploads/2020/08/vegetables-fruit-healthy-eating-ingredients-1200x628-facebook-1200x628.jpg"
-                                        class="img-thumbnail opacity">Resep Makanan</a>
+                                <a href="https://pahe.ph/" target="_">
+                                    <img src="../Image/imgRan2.jpg" class="imgRan">Download
+                                    film</a>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="link">
-                                <a href="https://pahe.ph/" target="_">
-                                    <img src="https://raw.githubusercontent.com/nugratar/hello-world/master/images/img2.jpg"
-                                        class="img-thumbnail opacity">Download film</a>
+                                <a href="https://www.bbcgoodfood.com/recipes/category/all-dishes" target="_">
+                                    <img src="../Image/imgRan3.jpg" class="imgRan">Resep Makanan</a>
                             </div>
                             <div class="link">
                                 <a href="https://subscene.com/" target="_">
-                                    <img src="https://raw.githubusercontent.com/nugratar/hello-world/master/images/img3.jpg"
-                                        class="img-thumbnail opacity">Subtitle film</a>
+                                    <img src="../Image/imgRan4.jpg" class="imgRan">Subtitle film</a>
                             </div>
                         </div>
                     </div>
-                    <h2>EXO</h2>
+                    <h2 class="judul" style="margin-top: 10px;">EXO</h2>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="link">
                                 <a href="https://wearexolina.com/2020/02/exo-all-concert-exo-planet.html" target="_">
-                                    <img src="https://campaign.naver.com/vliveplus/img/191220_exo_planet/1200x628.jpg"
-                                        class="img-thumbnail opacity">Konser</a>
-                                <p>Link DVD konser EXO</p>
+                                    <img src="../Image/exo1.jpg" class="imgRan">Konser</a>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="link">
                                 <a href=" https://twitter.com/weareoneexo" target="_">
-                                    <img src="https://wearelava.co.uk/wp-content/uploads/2016/06/twitter_logo-1200x628.jpg"
-                                        class="img-thumbnail opacity">Twitter</a>
-                                <p>Akun Twitter EXO</p>
+                                    <img src="../Image/exo2.jpg" class="imgRan">Twitter</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <h2 style="text-align: center;">Kampus</h2>
-                <h4>Mata Kuliah Semester 3</h4>
-                <ol>
-                    <li><a href="https://drive.google.com/drive/folders/1N965vGXR1gO-Y41xRzkw32XNCxlXvMkG?usp=sharing"
-                            target="_">Aljabar Terapan</a></li>
-                    <li><a href="https://drive.google.com/drive/folders/1EC_tlQmZ2g1dRSq-TDi7gnb7U3MLzEZF?usp=sharing"
-                            target="_">Desain dan Algoritma</a></li>
-                    <li><a href="https://drive.google.com/drive/folders/1F0Jd7LItKNHrGgLJUnUoSt7YiOUc9qXI?usp=sharing"
-                            target="_">Matematika Lanjut</a></li>
-                    <li><a href="https://drive.google.com/drive/folders/10RfMw-92pc421tystzU1OKh8YOVqX7lb?usp=sharing"
-                            target="_">Pemrograman Jaringan Komputer</a></li>
-                    <li><a href="https://drive.google.com/drive/folders/10Teb6so6EKZt8D3bvKE_xTf9_9gABZr0?usp=sharing"
-                            target="_">Pemrograman Web</a></li>
-                    <li><a href="https://drive.google.com/drive/folders/1sGNzi68_O_u-9JlQ94WNP4dFBOa0vfLN?usp=sharing"
-                            target="_">Sistem Basis Data</a></li>
-                    <li><a href="https://drive.google.com/drive/folders/10MOxMQJED7_7VBSS2-ZkW3_7sLEFVlbS?usp=sharing"
-                            target="_">Struktur Diskrit</a></li>
-                    <li><a href="https://drive.google.com/drive/folders/1-T3PwcnoDpyB3fh9Bf-2iOrPbTntyAES?usp=sharing"
-                            target="_">Teori Peluang</a></li>
-                </ol>
-                <h4>Jadwal Mata Kuliah Semester 3</h4>
-                <ul>
-                    <li><a
-                            href="https://drive.google.com/file/d/1HftPcW_et9ru2NDHELbbLxCV2y2il6E2/view?usp=sharing" target="_">pdf</a>
-                    </li>
-                    <li><a
-                            href="https://drive.google.com/file/d/1-sGbzRs_o255u-2m_Q6ejl86TSLGBvef/view?usp=sharing" target="_">word</a>
-                    </li>
-                </ul>
+                <div class="container">
+                    <h2 class="judul">Profil</h2>
+                    <div class="profil">
+                        <img src="../Image/profil.jpg" alt="profil" class="img-thumbnail imgPro">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam facilis fuga est
+                            nobis inventore, itaque unde laboriosam, quidem sapiente sunt autem excepturi quam
+                            commodi voluptatem enim? Nihil commodi laborum ratione?</p>
+                        <p id="textPro">Mahasiswa Ilmu Komputer 2019<br>Universitas Hasanuddin</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <h4 class="judul">Komentar</h4>
+                    <div id="komentar">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label for="lemail">Email</label>
+                            </div>
+                            <div class="col-md-9">
+                                <input type="email" id="iemail" name="iemail" placeholder="Email Anda.."><br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label for="lkomentar">Komentar</label>
+                            </div>
+                            <div class="col-md-9">
+                                <textarea id="ikomentar" name="subject" placeholder="Komentar Anda..."
+                                    style="height: 100px;"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <input type="submit" id="submit" value="Submit">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12" style="text-align: center;">
+                    <a href="https://web.whatsapp.com/" target="_">
+                        <img src="../Image/WhatsApp.png" alt="WhatsApp" class="imgFooter imgS"></a>
+                    <a href="https://twitter.com/" target="_">
+                        <img src="../Image/Twitter.png" alt="Twitter" class="imgFooter imgS"></a>
+                    <a href="https://instagram.com" target="_">
+                        <img src="../Image/Instragram.png" alt="Instagram" class="imgFooter imgS"></a>
+                    <br>lestaria19h@student.unhas.ac.id
+                    <br>Copyright 2020
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="footer" style="background-color:#E8E8E8; text-align: center;">
-        <a href="https://line.me/id/" target="_">
-            <img src="https://1.bp.blogspot.com/-QHm3gv3zc0U/XyvL9d7C-VI/AAAAAAAACl8/OkKXjwmahkEs5E-AUt7ZGtCN1CZhjycxwCLcBGAsYHQ/s1600/Logo%2BLINE.png"
-                alt="Line" style="width:40px;">Line</a>
-        <a href="https://web.whatsapp.com/" target="_">
-            <img src="https://www.freeiconspng.com/thumbs/logo-whatsapp-png/download-and-use-logo-whatsapp-png-clipart-3.png"
-                alt="WhatsApp" style="width:40px;">WhatsApp</a>
-        <p>lestaria19h@student.unhas.ac.id</p>
-    </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
