@@ -8,7 +8,7 @@ img {
     width: 100%;
 }
 
-.nav-item:hover {
+.nav-item:hover{
     background-color: #20DAA5;
     color: #000000;
 }
@@ -16,6 +16,19 @@ img {
 .dropdown-item:hover {
     background-color: #000000;
     color: #DAD420;
+}
+
+.btn {
+    border: 2px solid #20DAA5;
+}
+
+.btn:hover {
+    background-color: #20DAA5;
+    color: #000000;
+}
+
+.carousel-caption {
+    color: #19AE83;
 }
 
 .paragraf {
@@ -29,12 +42,12 @@ img {
     font-weight: bold;
     border: #DAD420;
     border-style: double;
-    color: #20DAA5;
+    color: #19AE83;
 }
 
 .link a {
     text-decoration: none;
-    color: #20DAA5;
+    color: #2A5A61 ;
     font-weight: bold;
 }
 
@@ -50,7 +63,8 @@ img {
 }
 
 .imgRan:hover {
-    box-shadow: 0 0 2px 5px rgb(13, 85, 65);
+    box-shadow: 0 0 2px 4px rgb(25, 174, 131);
+    color: #19ae83;
 }
 
 .imgPro {
@@ -69,13 +83,15 @@ img {
 
 #textPro {
     text-align: center;
+    font-weight: bold;
+    padding-bottom: 5px;
 }
 
 #komentar {
     background-color: #20DAA5;
     width: 100%;
     height: auto;
-    padding: 5px;
+    padding: 10px;
 }
 
 #ikomentar,
@@ -92,6 +108,9 @@ img {
     margin-top: 3px;
     margin-right: auto;
     margin-left: auto;
+}
+#submit:hover {
+    border: 2px solid #000000;
 }
 
 .footer {
