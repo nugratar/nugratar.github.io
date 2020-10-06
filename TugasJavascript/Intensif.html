@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Intensif</title>
+    <script>
+        console.log("Hi, ini kode Javascript");
+    </script>
+</head>
+
+<body>
+    <h3>Biaya Intensif</h3>
+    <script>
+        var totalsks = prompt("Masukkan total sks")
+        // var totalsks = 10;
+        var intensif_dasar = 8;
+        var intensif_lebih = (totalsks - 8);
+        var denda = 200;
+        var e = ((intensif_dasar * 200) + (intensif_lebih * 100));
+        var f = ((totalsks * 200));
+
+        if (totalsks == 8) {
+            document.write('Intensif dasar\t: ' + intensif_dasar + "<br>")
+            document.write("Total intensif\t: " + f);
+        } else if (totalsks > 8) {
+            document.write("Intensif dasar\t: " + intensif_dasar + "<br>");
+            document.write("Intensif lebih\t: " + intensif_lebih + "<br>");
+            document.write("Total intensif\t: " + e);
+        } else if (totalsks >= 1 && totalsks < 8) {
+            document.write("Denda\t: " + denda + "<br>");
+            document.write("Tidak mendapat intensif dasar" + "<br>");
+            document.write("Total intensif\t: " + denda + "<br>");
+        }
+    </script>
+</body>
+
+</html>

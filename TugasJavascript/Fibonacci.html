@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fibonacci</title>
+    <script>
+        console.log("Hi, ini kode JavaScript")
+    </script>
+</head>
+
+<body>
+    <h4>Fibonacci</h4>
+    <script>
+        var n = parseInt(window.prompt("Masukkan n: "))
+        var a = 1, b = 0, temp;
+
+        while (n >= 0) {
+            temp = a;
+            a = a + b;
+            document.write(b + " ")
+            b = temp;
+            n--;
+        }
+    </script>
+</body>
+
+</html>
