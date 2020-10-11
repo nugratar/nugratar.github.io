@@ -2,7 +2,8 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="Tugas3.css">
@@ -21,21 +22,6 @@
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Semester 1</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Bahasa Indonesia</a>
-                        <a class="dropdown-item" href="#">Biologi Dasar</a>
-                        <a class="dropdown-item" href="#">Fisika Dasar 1</a>
-                        <a class="dropdown-item" href="#">Kewirausahaan</a>
-                        <a class="dropdown-item" href="#">Kimia Dasar</a>
-                        <a class="dropdown-item" href="#">Matematika Dasar I</a>
-                        <a class="dropdown-item" href="#">Pancasila</a>
-                        <a class="dropdown-item" href="#">Pendidikan Agama Islan</a>
-                        <a class="dropdown-item" href="#">Pengantar Pemrograman</a>
-                        <a class="dropdown-item" href="#">Wawasan Sosial Budaya Maritim</a>
-                    </div>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Semester 2</a>
@@ -70,13 +56,21 @@
                 </li>
             </ul>
             <ul class="navbar-nav narvbar-left">
-                <form class="form-inline">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search">
-                    <button class="btn" type="submit">Search</button>
+                <form class=" form">
+                    <div id="myNav" class="overlay">
+                        <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="overlay-content">
+                            <input class="form-content" type="search" placeholder="Search ...">
+                            <div class="form-border"></div>
+                        </div>
+                    </div>
+                    <!-- <span style="font-size: 20px; cursor: pointer" onclick="openNav()">Search</span> -->
+                    <span class="btnsch" onclick="openNav()">Search</span>
                 </form>
             </ul>
         </div>
     </nav>
+
     <div class="container-fluid">
         <div id="demo" class="carousel slide" data-ride="carousel">
             <ul class="carousel-indicators">
@@ -133,39 +127,108 @@
                     <h2 class="judul">Random Things</h2>
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="link">
-                                <a href="https://www.youtube.com/results?search_query=tom+and+jerry" target="_">
-                                    <img src="../Image/imgRan1.jpg" class="imgRan">Tom and Jerry</a>
+                            <div class="flip-card crRan">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="../Image/imgRan1.jpg" class="imgRan">
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <a href="https://www.youtube.com/results?search_query=tom+and+jerry" target="_"
+                                            id="link-random">Tom and Jerry</a>
+                                        <p id="textRan">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Quisquam eius laborum optio expedita assumenda minima accusamus,
+                                            voluptatibus mollitia labore ullam illum quis atque at. Inventore recusandae
+                                            ex quisquam esse nostrum.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="link">
-                                <a href="https://pahe.ph/" target="_">
-                                    <img src="../Image/imgRan2.jpg" class="imgRan">Download
-                                    film</a>
+                            <div class="flip-card crRan">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="../Image/imgRan2.jpg" class="imgRan">
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <a href="https://pahe.ph/" target="_" id="link-random">Download film</a>
+                                        <p id="textRan">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Quisquam eius laborum optio expedita assumenda minima accusamus,
+                                            voluptatibus mollitia labore ullam illum quis atque at. Inventore recusandae
+                                            ex quisquam esse nostrum.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="link">
-                                <a href="https://www.bbcgoodfood.com/recipes/category/all-dishes" target="_">
-                                    <img src="../Image/imgRan3.jpg" class="imgRan">Resep Makanan</a>
+                            <div class="flip-card crRan">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="../Image/imgRan3.jpg" class="imgRan">
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <a href="https://www.bbcgoodfood.com/recipes/category/all-dishes" target="_"
+                                            id="link-random">Resep Makanan</a>
+                                        <p id="textRan">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Quisquam eius laborum optio expedita assumenda minima accusamus,
+                                            voluptatibus mollitia labore ullam illum quis atque at. Inventore recusandae
+                                            ex quisquam esse nostrum.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="link">
-                                <a href="https://subscene.com/" target="_">
-                                    <img src="../Image/imgRan4.jpg" class="imgRan">Subtitle film</a>
+                            <div class="flip-card crRan">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="../Image/imgRan4.jpg" class="imgRan">
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <a href="https://subscene.com/" target="_" id="link-random">Subtitle film</a>
+                                        <p id="textRan">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Quisquam eius laborum optio expedita assumenda minima accusamus,
+                                            voluptatibus mollitia labore ullam illum quis atque at. Inventore recusandae
+                                            ex quisquam esse nostrum.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <h2 class="judul" style="margin-top: 10px;">EXO</h2>
+                    <h2 class="judul" style="margin-top: 30px;">EXO</h2>
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="link">
-                                <a href="https://wearexolina.com/2020/02/exo-all-concert-exo-planet.html" target="_">
-                                    <img src="../Image/exo1.jpg" class="imgRan">Konser</a>
+                            <div class="flip-card crRan">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="../Image/exo1.jpg" class="imgRan">
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <a href="https://wearexolina.com/2020/02/exo-all-concert-exo-planet.html"
+                                            target="_" id="link-random">Konser EXO</a>
+                                        <p id="textRan">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Quisquam eius laborum optio expedita assumenda minima accusamus,
+                                            voluptatibus mollitia labore ullam illum quis atque at. Inventore recusandae
+                                            ex quisquam esse nostrum.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="link">
-                                <a href=" https://twitter.com/weareoneexo" target="_">
-                                    <img src="../Image/exo2.jpg" class="imgRan">Twitter</a>
+                            <div class="flip-card crRan">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="../Image/exo2.jpg" class="imgRan">
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <a href=" https://twitter.com/weareoneexo" target="_" id="link-random">Akun
+                                            Twitter EXO</a>
+                                        <p id="textRan">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Quisquam eius laborum optio expedita assumenda minima accusamus,
+                                            voluptatibus mollitia labore ullam illum quis atque at. Inventore recusandae
+                                            ex quisquam esse nostrum.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -179,7 +242,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam facilis fuga est
                             nobis inventore, itaque unde laboriosam, quidem sapiente sunt autem excepturi quam
                             commodi voluptatem enim? Nihil commodi laborum ratione?</p>
-                        <p id="textPro">Mahasiswa Ilmu Komputer 2019<br>Universitas Hasanuddin</p>
+                        <p id="textPro">Anugrah Lestari<br>Mahasiswa Ilmu Komputer 2019<br>Universitas Hasanuddin</p>
                     </div>
                 </div>
                 <div class="container">
@@ -203,29 +266,29 @@
                             </div>
                         </div>
                         <div class="row">
-                            <input type="submit" id="submit" value="Submit">
+                            <button id="submit" type="submit">
+                                <a href="#">Submit</a>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <div class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-12" style="text-align: center;">
-                    <a href="https://web.whatsapp.com/" target="_">
-                        <img src="../Image/WhatsApp.png" alt="WhatsApp" class="imgFooter imgS"></a>
-                    <a href="https://twitter.com/" target="_">
-                        <img src="../Image/Twitter.png" alt="Twitter" class="imgFooter imgS"></a>
-                    <a href="https://instagram.com" target="_">
-                        <img src="../Image/Instragram.png" alt="Instagram" class="imgFooter imgS"></a>
-                    <br>lestaria19h@student.unhas.ac.id
-                    <br>Copyright 2020
+                    <a href="https://twitter.com/" class="fa fa-twitter" target="_"></a>
+                    <a href="https://instagram.com" class="fa fa-instagram" target="_"></a>
+                    <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                    <p id="emailUH"><b>lestaria19h@student.unhas.ac.id</b><br>Copyright© 2020</p>
                 </div>
             </div>
         </div>
     </div>
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -239,6 +302,14 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+        }
+        function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+        }
+    </script>
 </body>
 
 </html>
