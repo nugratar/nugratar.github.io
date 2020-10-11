@@ -6,12 +6,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#show").click(function () {
+                $("#hiow").show();
+            });
+            $("#hide").click(function () {
+                $("#hiow").hide();
+                alert("Paragraf akan disembunyikan");
+            });
+        });
+    </script>
     <link rel="stylesheet" href="Tugas3.css">
     <title>Tugas3</title>
 </head>
 
 <body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #DAD420">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #A9754F">
         <a class="navbar-brand">My Web</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,7 +36,7 @@
                     <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Semester 2</a>
+                    <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">Semester 2</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">Aljabar Linier</a>
                         <a class="dropdown-item" href="#">Bahasa Inggris</a>
@@ -38,12 +50,8 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Semester 3</a>
+                    <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">Semester 3</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item"
-                            href="https://drive.google.com/file/d/1HftPcW_et9ru2NDHELbbLxCV2y2il6E2/view?usp=sharing"
-                            target="_">Jadwal
-                            Matkul</a>
                         <a class="dropdown-item" href="#">Aljabar Terapan</a>
                         <a class="dropdown-item" href="#">Desain dan Analsisi Algotitma</a>
                         <a class="dropdown-item" href="#">Matematika Lanjut</a>
@@ -64,7 +72,6 @@
                             <div class="form-border"></div>
                         </div>
                     </div>
-                    <!-- <span style="font-size: 20px; cursor: pointer" onclick="openNav()">Search</span> -->
                     <span class="btnsch" onclick="openNav()">Search</span>
                 </form>
             </ul>
@@ -203,7 +210,7 @@
                                     </div>
                                     <div class="flip-card-back">
                                         <a href="https://wearexolina.com/2020/02/exo-all-concert-exo-planet.html"
-                                            target="_" id="link-random">Konser EXO</a>
+                                            target="_" id="link-random">Konser</a>
                                         <p id="textRan">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                             Quisquam eius laborum optio expedita assumenda minima accusamus,
                                             voluptatibus mollitia labore ullam illum quis atque at. Inventore recusandae
@@ -239,7 +246,9 @@
                     <h2 class="judul">Profil</h2>
                     <div class="profil">
                         <img src="../Image/profil.jpg" alt="profil" class="img-thumbnail imgPro">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam facilis fuga est
+                        <button id="hide">Hide paragraph</button>
+                        <button id="show">Show paragraph</button>
+                        <p id="hiow">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam facilis fuga est
                             nobis inventore, itaque unde laboriosam, quidem sapiente sunt autem excepturi quam
                             commodi voluptatem enim? Nihil commodi laborum ratione?</p>
                         <p id="textPro">Anugrah Lestari<br>Mahasiswa Ilmu Komputer 2019<br>Universitas Hasanuddin</p>
@@ -266,9 +275,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <button id="submit" type="submit">
-                                <a href="#">Submit</a>
-                            </button>
+                            <input type="submit" id="submit-btn" value="Kirim">
                         </div>
                     </div>
                 </div>
