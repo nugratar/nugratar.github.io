@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(140deg, rgba(97,97,97,1) 15%, rgba(140,86,28,1) 100%);
+    background: linear-gradient(140deg, rgba(97,97,97,1) 15%, rgba(169, 117, 79, 1) 100%);
     background-attachment: fixed;
     font-family: sans-serif;
 }
@@ -30,8 +30,8 @@ body {
     background-image: url("../Image/imgLogin.jpg");
     background-position: center;
     background-size: cover;
-    height: 125px;
     width: 329px;
+    height: 125px;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
 }
@@ -126,7 +126,7 @@ input:checked + .slider:before {
     margin-top: 30px;
     width: 100%;
     height: 40px;
-    background: linear-gradient(140deg, rgba(97,97,97,1) 15%, rgba(140,86,28,1) 100%);
+    background: linear-gradient(140deg, rgba(97,97,97,1) 15%, rgba(169, 117, 79, 1) 100%);
     border: none;
     border-radius: 3px;
     color: white;
