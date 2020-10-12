@@ -63,7 +63,7 @@
                     </div>
                 </li>
             </ul>
-            <ul class="navbar-nav narvbar-left">
+            <ul class="navbar-nav ml-auto">
                 <form class=" form">
                     <div id="myNav" class="overlay">
                         <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
@@ -72,7 +72,7 @@
                             <div class="form-border"></div>
                         </div>
                     </div>
-                    <span class="btnsch" onclick="openNav()">Search</span>
+                    <span class="fa fa-search" onclick="openNav()"></span>
                 </form>
             </ul>
         </div>
@@ -95,14 +95,14 @@
                 <div class="carousel-item">
                     <img src="../Image/imgCar2.jpg" alt="pensil" class="imgCar">
                     <div class=" carousel-caption">
-                        <h3>EXO</h3>
-                        <p>We Are One</p>
+                        <h4>Pemrograman Web A</h4>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="../Image/imgCar1.jpg" alt="pensil" class="imgCar">
                     <div class="carousel-caption">
-                        <h6>Page ini dibuat untuk memenuhi tugas Pemrograman Web A</h6>
+                        <h3>EXO</h3>
+                        <p>We Are One</p>
                     </div>
                 </div>
             </div>
@@ -140,8 +140,10 @@
                                         <img src="../Image/imgRan1.jpg" class="imgRan">
                                     </div>
                                     <div class="flip-card-back">
+                                        <i class="fa fa-hand-o-right"></i>
                                         <a href="https://www.youtube.com/results?search_query=tom+and+jerry" target="_"
-                                            id="link-random">Tom and Jerry</a>
+                                            id="link-random"> Tom and Jerry</a>
+                                        <i class="fa fa-hand-o-left"></i>
                                         <p id="textRan">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                             Quisquam eius laborum optio expedita assumenda minima accusamus,
                                             voluptatibus mollitia labore ullam illum quis atque at. Inventore recusandae
@@ -156,7 +158,9 @@
                                         <img src="../Image/imgRan2.jpg" class="imgRan">
                                     </div>
                                     <div class="flip-card-back">
+                                        <i class="fa fa-hand-o-right"></i>
                                         <a href="https://pahe.ph/" target="_" id="link-random">Download film</a>
+                                        <i class="fa fa-hand-o-left"></i>
                                         <p id="textRan">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                             Quisquam eius laborum optio expedita assumenda minima accusamus,
                                             voluptatibus mollitia labore ullam illum quis atque at. Inventore recusandae
@@ -173,8 +177,10 @@
                                         <img src="../Image/imgRan3.jpg" class="imgRan">
                                     </div>
                                     <div class="flip-card-back">
+                                        <i class="fa fa-hand-o-right"></i>
                                         <a href="https://www.bbcgoodfood.com/recipes/category/all-dishes" target="_"
                                             id="link-random">Resep Makanan</a>
+                                        <i class="fa fa-hand-o-left"></i>
                                         <p id="textRan">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                             Quisquam eius laborum optio expedita assumenda minima accusamus,
                                             voluptatibus mollitia labore ullam illum quis atque at. Inventore recusandae
@@ -189,7 +195,9 @@
                                         <img src="../Image/imgRan4.jpg" class="imgRan">
                                     </div>
                                     <div class="flip-card-back">
+                                        <i class="fa fa-hand-o-right"></i>
                                         <a href="https://subscene.com/" target="_" id="link-random">Subtitle film</a>
+                                        <i class="fa fa-hand-o-left"></i>
                                         <p id="textRan">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                             Quisquam eius laborum optio expedita assumenda minima accusamus,
                                             voluptatibus mollitia labore ullam illum quis atque at. Inventore recusandae
@@ -209,9 +217,11 @@
                                         <img src="../Image/exo1.jpg" class="imgRan">
                                     </div>
                                     <div class="flip-card-back">
+                                        <i class="fa fa-hand-o-right"></i>
                                         <a href="https://wearexolina.com/2020/02/exo-all-concert-exo-planet.html"
                                             target="_" id="link-random">Konser</a>
-                                        <p id="textRan">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        <i class="fa fa-hand-o-left"></i>
+                                        <p id=" textRan">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                             Quisquam eius laborum optio expedita assumenda minima accusamus,
                                             voluptatibus mollitia labore ullam illum quis atque at. Inventore recusandae
                                             ex quisquam esse nostrum.
@@ -227,8 +237,10 @@
                                         <img src="../Image/exo2.jpg" class="imgRan">
                                     </div>
                                     <div class="flip-card-back">
+                                        <i class="fa fa-hand-o-right"></i>
                                         <a href=" https://twitter.com/weareoneexo" target="_" id="link-random">Akun
                                             Twitter EXO</a>
+                                        <i class="fa fa-hand-o-left"></i>
                                         <p id="textRan">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                             Quisquam eius laborum optio expedita assumenda minima accusamus,
                                             voluptatibus mollitia labore ullam illum quis atque at. Inventore recusandae
@@ -289,14 +301,22 @@
                 <div class="col-12" style="text-align: center;">
                     <a href="https://twitter.com/" class="fa fa-twitter" target="_"></a>
                     <a href="https://instagram.com" class="fa fa-instagram" target="_"></a>
-                    <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                    <a href="https://www.facebook.com/" class="fa fa-facebook" target="_"></a>
+                    <br>
                     <p id="emailUH"><b>lestaria19h@student.unhas.ac.id</b><br>Copyright© 2020</p>
                 </div>
             </div>
         </div>
     </div>
 
-
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+        }
+        function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+        }
+    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -309,14 +329,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
-    <script>
-        function openNav() {
-            document.getElementById("myNav").style.height = "100%";
-        }
-        function closeNav() {
-            document.getElementById("myNav").style.height = "0%";
-        }
-    </script>
+
 </body>
 
 </html>
