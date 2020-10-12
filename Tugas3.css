@@ -80,17 +80,16 @@ img {
     }
 }
 
-.btnsch {
-    font-size: 20px;
-    cursor: pointer;
+.fa-search {
     padding: 5px;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: center;
 }
 
-.btnsch:hover {
-    background-color: #F0EAD6;
-    color: #000000;
+.fa-search:hover {
+    background-color: #77212E;
     border-radius: 3px;
-    font-weight: bold;
 }
 
 .form {
@@ -184,6 +183,11 @@ input[type=search]:focus {
     padding: 5px;
     border-radius: 5px;
     transform: rotateY(180deg);
+}
+
+.fa-hand-o-right,
+.fa-hand-o-left {
+    font-size: 20px;
 }
 
 .crRan {
@@ -291,16 +295,6 @@ input[type=search]:focus {
 
 .footer {
     background-color: #A9754F;
-    /* color: #000000; */
-}
-
-.fa {
-    padding: 10px;
-    font-size: 30px;
-    width: 48px;
-    text-align: center;
-    margin: 5px 2px;
-    border-radius: 50%;
 }
 
 .fa:hover {
@@ -310,20 +304,39 @@ input[type=search]:focus {
 }
 
 .fa-twitter {
+    padding: 10px;
+    font-size: 30px;
+    width: 48px;
+    text-align: center;
+    margin: 5px 2px;
+    border-radius: 50%;
     background: linear-gradient(to bottom right, #55acee 0%, #0033cc 100%);
     color: white;
 }
 
 .fa-instagram {
+    padding: 10px;
+    font-size: 30px;
+    width: 48px;
+    text-align: center;
+    margin: 5px 2px;
+    border-radius: 50%;
     background: linear-gradient(141deg, rgba(102, 0, 255, 1) 17%, rgba(255, 0, 102, 1) 63%, rgba(219, 255, 0, 1) 100%);
     color: white;
 }
 
 .fa-facebook {
+    padding: 10px;
+    font-size: 30px;
+    width: 48px;
+    text-align: center;
+    margin: 5px 2px;
+    border-radius: 50%;
     background: linear-gradient(to bottom right, #3b5998 0%, #000066 100%);
     color: white;
 }
 
 #emailUH {
+    margin-top: 5px;
     letter-spacing: 3px;
 }
