@@ -12,13 +12,15 @@ img {
     background-color: #F0EAD6;
     color: #000000;
     border-radius: 3px;
+    box-shadow: 0 2px 3px #000000;
     font-weight: bold;
     cursor: pointer;
 }
 
 .dropdown-item:hover {
-    background-color: #77212E;
-    color: #F0EAD6;
+    border-bottom: 3px solid #A9754F;
+    /* background-color: #77212E; */
+    color: #77212E;
     font-weight: bold;
 }
 
@@ -132,106 +134,112 @@ input[type=search]:focus {
 }
 
 .paragraf {
-    text-decoration: none;
-    background-color: #77212E;
-    color: #F0EAD6;
-    text-align: justify;
     padding: 10px;
+    background-color: #77212E;
+    box-shadow: 0px 2px 3px #000000;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    color: #F0EAD6;
+    text-align: center;
 }
 
 .judul {
+    margin-bottom: 10px;
+    background-color: #A9754F;
+    box-shadow: 0px 3px 3px #77212E;
+    border-radius: 4px;
+    color: #77212E;
     font-weight: bold;
-    border: 5px dashed #A9754F;
-    color: #641B26;
-}
-
-.flip-card {
-    background-color: transparent;
-    width: auto;
-    height: auto;
-    cursor: pointer;
-    perspective: 1000px;
-}
-
-.flip-card-inner {
-    position: relative;
-    width: auto;
-    height: auto;
     text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
+.link {
+    position: relative;
+    border: 4px solid #A9754F;
+    border-radius: 4px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 3px #77212E;
 }
 
-.flip-card-front,
-.flip-card-back {
-    position: absolute;
-    width: auto;
+.imgRan {
+    opacity: 1;
+    display: block;
+    width: 100%;
     height: auto;
+    transition: .5s ease;
     backface-visibility: hidden;
 }
 
-.flip-card-back {
-    background-color: #A9754F;
-    color: #F0EAD6;
+.card {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-100%, -100%);
     text-align: center;
-    width: 100%;
+    border: none;
+}
+
+.link:hover .imgRan {
+    opacity: 0.3;
+}
+
+.link:hover .card {
+    box-shadow: 0px 3px 4px #000000;
+    opacity: 1;
+}
+
+.text {
+    position: relative;
+    background-color: #77212E;
+    color: #F0EAD6;
+    border: none;
+    border-radius: 3px;
+    font-size: 11px;
     padding: 5px;
-    border-radius: 5px;
-    transform: rotateY(180deg);
+}
+
+.text a {
+    position: relative;
+    color: #F0EAD6;
+    font-size: 16px;
+    text-decoration: none;
+    border-bottom: 2px dashed #A9754F;
+}
+
+.text a:hover {
+    background-color: #F0EAD6;
+    color: #641B26;
+    font-weight: bold;
+    padding: 3px;
+    border: none;
+    border-radius: 3px;
 }
 
 .fa-hand-o-right,
 .fa-hand-o-left {
-    font-size: 20px;
-}
-
-.crRan {
-    width: 100%;
-    padding-top: 5%;
-    margin-bottom: 58%;
-    border-radius: 6px;
-}
-
-#link-random {
-    background-color: #641B26;
-    color: #F0EAD6;
-    padding: 2px;
-    border-radius: 3px;
-    text-decoration: none;
-}
-
-#link-random:hover {
-    background-color: #F0EAD6;
-    color: #641B26;
-    font-weight: bold;
-}
-
-.judul,
-#link-random {
-    text-align: center;
-}
-
-.imgRan {
-    border: 4px solid #A9754F;
-    border-radius: 4px;
+    font-size: 14px;
 }
 
 .imgPro {
     max-width: 200px;
-    box-shadow: 0 3px 20px 0px #000000;
     display: block;
     margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
+    border: 4px solid #A9754F;
+    border-radius: 4px;
+    box-shadow: 0 2px 3px #000000;
 }
 
 .profil {
     background-color: #77212E;
+    box-shadow: 0px 2px 3px #77212E;
+    border-radius: 4px;
     color: #F0EAD6;
     padding: 10px 10px 0 10px;
     text-align: justify;
@@ -252,6 +260,7 @@ input[type=search]:focus {
 #hide:hover,
 #show:hover {
     font-weight: bolder;
+    box-shadow: 0 2px 3px #000000;
 }
 
 #textPro {
@@ -262,9 +271,12 @@ input[type=search]:focus {
 
 #komentar {
     background-color: #77212E;
+    box-shadow: 0px 3px 3px #77212E;
+    border-radius: 4px;
     color: #F0EAD6;
     width: 100%;
     height: auto;
+    margin-bottom: 10px;
     padding: 10px;
 }
 
@@ -291,10 +303,13 @@ input[type=search]:focus {
     font-weight: bold;
     outline: none;
     text-decoration: none;
+    box-shadow: 0 2px 3px #000000;
 }
 
 .footer {
     background-color: #A9754F;
+    box-shadow: 0 -2px 4px #77212E;
+    margin-top: 10px;
 }
 
 .fa:hover {
@@ -310,6 +325,7 @@ input[type=search]:focus {
     text-align: center;
     margin: 5px 2px;
     border-radius: 50%;
+    box-shadow: 0 2px 3px #000000;
     background: linear-gradient(to bottom right, #55acee 0%, #0033cc 100%);
     color: white;
 }
@@ -321,6 +337,7 @@ input[type=search]:focus {
     text-align: center;
     margin: 5px 2px;
     border-radius: 50%;
+    box-shadow: 0 2px 3px #000000;
     background: linear-gradient(141deg, rgba(102, 0, 255, 1) 17%, rgba(255, 0, 102, 1) 63%, rgba(219, 255, 0, 1) 100%);
     color: white;
 }
@@ -332,6 +349,7 @@ input[type=search]:focus {
     text-align: center;
     margin: 5px 2px;
     border-radius: 50%;
+    box-shadow: 0 2px 3px #000000;
     background: linear-gradient(to bottom right, #3b5998 0%, #000066 100%);
     color: white;
 }
